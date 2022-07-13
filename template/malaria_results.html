@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <title> Result </title>
+    <!-- CSS -->
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand mr-4" href="/">Robodoc</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="/">Home</a>
+
+                        <a class="nav-item nav-link" href="/cancer">Cancer</a>
+                        <a class="nav-item nav-link" href="/heart">Heart</a>
+
+                        <a class="nav-item nav-link" href="/Malaria">Malaria</a>
+                    </div>
+                    <!-- Navbar Right Side 
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/register">Register</a>
+         
+        </div>-->
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            Based on your info you may be suffering from malaria
+            <h2>6.Malaria</h2>
+            <div style="text-align: center; margin-top: 20px">
+                <img style="max-width: 600px" src="{{ url_for('static', filename='malaria.jpg') }}" />
+            </div>
+            <h3>Overview</h3>
+            <p>
+                Malaria is a life-threatening mosquito-borne blood disease. The Anopheles mosquito transmits it to humans.</p><br>
+            <p>The parasites in mosquitos that spread malaria belong to the Plasmodium genus. Over 100 types of Plasmodium parasite can infect a variety of species. Different types replicate at different rates, changing how quickly the symptoms escalate,
+                and the severity of the disease.</p>
+            <h3>Symptoms</h3>
+            <ul>
+                <li>fever and chills</li>
+                <li>impaired consciousness</li>
+                <li>prostration, or adopting a prone position multiple convulsions</li>
+                <li>deep breathing and respiratory distress</li>
+                <li>abnormal bleeding and signs of anemia</li>
+                <li>clinical jaundice and evidence of vital organ dysfunction</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+
+            <h3>We recommend you carry out PCR to diagnose the presence of malaria</h3>
+            <p>Visit the following link for more help</p>
+            <a href="https://www.cdc.gov/malaria/diagnosis_treatment/diagnostic_tools.html">Click here</a>
+
+            <p>To carry out the detection using the reports visit below link</p>
+            <a href="/Malaria">Click me</a>
+
+
+            </form>
+    </header>
